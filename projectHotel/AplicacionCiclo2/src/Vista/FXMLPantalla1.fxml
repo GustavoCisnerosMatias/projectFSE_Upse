@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.FXMLPantalla1Controller">
+   <children>
+      <AnchorPane prefHeight="441.0" prefWidth="684.0" style="-fx-background-color: #D1FF00;">
+         <children>
+            <Button fx:id="btn_consultar" layoutX="116.0" layoutY="102.0" mnemonicParsing="false" onAction="#acc_consultar" text="CONSULTAR" />
+            <TableView fx:id="tv_personas" layoutX="258.0" layoutY="58.0" prefHeight="358.0" prefWidth="402.0">
+              <columns>
+                <TableColumn fx:id="col_id" prefWidth="89.0" text="Cedula" />
+                <TableColumn fx:id="col_nombres" prefWidth="116.0" text="NOMBRES" />
+                  <TableColumn fx:id="col_direccion" prefWidth="83.0" text="Telefono" />
+                  <TableColumn fx:id="col_estado" minWidth="0.0" prefWidth="113.0" text="Email" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txt_cedula" layoutX="91.0" layoutY="61.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label layoutX="30.0" layoutY="65.0" text="Cedula" />
+            <Label layoutX="28.0" layoutY="162.0" text="Nombre" />
+            <Label layoutX="28.0" layoutY="198.0" text="Telefono" />
+            <Label layoutX="30.0" layoutY="232.0" text="Email" />
+            <TextField fx:id="txt_nombre" layoutX="89.0" layoutY="158.0" />
+            <TextField fx:id="txt_telefono" layoutX="89.0" layoutY="194.0" prefHeight="25.0" prefWidth="149.0" />
+            <TextField fx:id="txt_email" layoutX="89.0" layoutY="228.0" />
+            <Button fx:id="btn_guardar" layoutX="98.0" layoutY="374.0" mnemonicParsing="false" onAction="#acc_guardar" prefHeight="25.0" prefWidth="83.0" text="Guardar" />
+            <Button fx:id="btn_modificar" layoutX="98.0" layoutY="326.0" mnemonicParsing="false" onAction="#acc_modificar" prefHeight="25.0" prefWidth="83.0" text="Modificar" />
+            <Button fx:id="btn_eliminar" layoutX="98.0" layoutY="280.0" mnemonicParsing="false" onAction="#acc_eliminar" prefHeight="25.0" prefWidth="83.0" text="Eliminar" />
+            <Label layoutX="332.0" layoutY="14.0" text="CLIENTE" />
+         </children></AnchorPane>
+   </children>
+</VBox>

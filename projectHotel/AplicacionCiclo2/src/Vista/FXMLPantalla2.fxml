@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.FXMLPantalla2Controller">
+   <children>
+      <AnchorPane prefHeight="404.0" prefWidth="600.0" style="-fx-background-color: #D1FF00;">
+         <children>
+            <Label layoutX="272.0" layoutY="14.0" text="HABITACIONES" />
+            <Label layoutX="36.0" layoutY="41.0" text="Numero: " />
+            <Label layoutX="24.0" layoutY="105.0" text="Descripcion" />
+            <Label layoutX="25.0" layoutY="154.0" text="Precio Base" />
+            <Label layoutX="14.0" layoutY="246.0" text="Cantidad Camas" />
+            <Label layoutX="15.0" layoutY="287.0" text="Tipo Habitacion" />
+            <Button fx:id="btn_consultar" layoutX="151.0" layoutY="67.0" mnemonicParsing="false" onAction="#acc_consultar" text="Consultar" />
+            <Button fx:id="btn_eliminar" layoutX="14.0" layoutY="340.0" mnemonicParsing="false" onAction="#acc_eliminar" prefHeight="25.0" prefWidth="67.0" text="Eliminar" />
+            <Button fx:id="btn_modificar" layoutX="100.0" layoutY="340.0" mnemonicParsing="false" onAction="#acc_modificar" text="Modificar" />
+            <Button fx:id="btn_insertar" layoutX="185.0" layoutY="340.0" mnemonicParsing="false" onAction="#acc_insertar" prefHeight="25.0" prefWidth="67.0" text="Insertar" />
+            <TextField fx:id="txt_numero" layoutX="110.0" layoutY="37.0" />
+            <TextField fx:id="txt_descripcion" layoutX="110.0" layoutY="105.0" />
+            <TextField fx:id="txt_precioBase" layoutX="110.0" layoutY="150.0" />
+            <TextField fx:id="txt_cantidad" layoutX="110.0" layoutY="242.0" />
+            <ComboBox fx:id="combox_tipoHabitacion" layoutX="109.0" layoutY="283.0" onAction="#acc_habilitarCantidadCamas" prefWidth="150.0" />
+            <CheckBox fx:id="chk_vistaMar" layoutX="119.0" layoutY="201.0" mnemonicParsing="false" text="Activar para &quot;SI&quot;" />
+            <Label layoutX="25.0" layoutY="201.0" text="Vista al Mar" />
+            <TableView fx:id="tv_habitacion" layoutX="272.0" layoutY="37.0" prefHeight="329.0" prefWidth="323.0">
+              <columns>
+                <TableColumn fx:id="col_numero" prefWidth="89.0" text="Numero" />
+                <TableColumn fx:id="col_precioBase" prefWidth="98.0" text="PrecioBase" />
+                  <TableColumn fx:id="col_cantidadCamas" prefWidth="135.0" text="Cantidad Camas" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+   </children>
+</VBox>
