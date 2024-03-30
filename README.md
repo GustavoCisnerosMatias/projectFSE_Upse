@@ -1,2 +1,2 @@
-# projectFSE_Upse
+# projectHotel
 java + sql + fxml
